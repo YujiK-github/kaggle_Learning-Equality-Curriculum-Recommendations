@@ -3,7 +3,10 @@
 # [Learning Equality - Curriculum Recommendations](https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations)  
 > The goal of this competition is to streamline the process of matching educational content to specific topics in a curriculum. You will develop an accurate and efficient model trained on a library of K-12 educational materials that have been organized into a variety of topic taxonomies. These materials are in diverse languages, and cover a wide range of topics, particularly in STEM (Science, Technology, Engineering, and Mathematics).
 
-# Description
+# Solution Overview
+
+## CV setting
+GroupKFold(n_splits=3).split(groups=df["channel"]) with category non-source topic
 
 ## 1st stage model(Retriever)
 Extract candidates from a large amount of content based on the cosine similarity of sentence embedding.
@@ -50,9 +53,9 @@ Ensemble to improve score.
   * I want to assign at least one content to each topic, so I assign k content of pairs of topics that were not assigned and have a large probability (which I also search for)
   
 ## 3rd stage model(stacking lgb)
-Stacking using lightgbm.
+Stacking using LightGBM.
 * metric: cross_entropy
-* useful features: Cosine Similarity(from 1st_stage_model), logits(from 2nd_stage_model)
+* useful features: Cosine Similarity of two sentences(from 1st_stage_model), logits(from 2nd_stage_model)
 * Search for thresholds & top_k.
   * I want to assign at least one content to each topic, so I assign k content of pairs of topics that were not assigned and have a large probability (which I also search for)
 
