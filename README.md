@@ -61,7 +61,7 @@ Stacking using LightGBM.
 
 # Published notebook
 https://www.kaggle.com/code/yujikomi/lecr-preprocessing-considering-language  
-This notebook is based on the idea that the language and content of the topic is almost the same. We have shown that recall can be improved by using this.
+This notebook is based on the idea that the language and content of the topic is almost the same.   I have shown that recall can be improved by using this.
 
 # CV vs LB vs PB
 
