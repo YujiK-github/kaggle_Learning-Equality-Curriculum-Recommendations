@@ -7,7 +7,7 @@
 
 ## CV setting
 GroupKFold(n_splits=3).split(groups=df["channel"]) with category non-source topic.  
-I used only fold0 result because I had multiple retrieval results (1st_stage_model) at the time of inference and could not think of a good way to integrate them.
+If multiple folds are used, there will be multiple retrieval results (1st_stage_model) for inference, and I could not think of a good way to integrate them, so I used only one fold.
 ## 1st stage model(Retriever)
 Extract candidates from a large amount of content based on the cosine similarity of sentence embedding.
 * DataLoader: [NoDuplicatesDataLoader](https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/datasets/NoDuplicatesDataLoader.py)
