@@ -67,17 +67,18 @@ This notebook is based on the idea that the language and content of the topic is
 
 | file | CV | LB | PB |
 | - | - | - | - |
-| submission/weighted_average_ver1 | 0.5937 | 0.556 | 0.585 |
-| submission/weighted_average_ver2 | 0.5955 | 0.557 | 0.585 |
-| submission/stacking_lgb | 0.6025 | 0.567 | 0.595 |
-| exp004 | 0.5004 | 0.466 | 0.487 |
-| exp006 | 0.5591 | 0.511 | 0.54 |
-| exp007 | 0.5630 | 0.530 | 0.561 |
-| exp008 | 0.5456 | 0.516 | 0.547 |
+| submission/weighted_average_ver1 | 0.5937 | 0.55654 | 0.5859 |
+| submission/weighted_average_ver2 | 0.5955 | 0.55752 | 0.58541 |
+| submission/stacking_lgb | 0.6025 | 0.56759 | 0.59552 |
+| exp004 | 0.5004 | 0.46699 | 0.48793 |
+| exp006 | 0.5591 | 0.51199 | 0.54092 |
+| exp007 | 0.5630 | 0.5301 | 0.56182 |
+| exp008 | 0.5456 | 0.51697 | 0.54745 |
+
 
 # Execution environments
 kaggle notebook, colab pro+
 
 # Ranking
-* LB: 77th
-* PB: 75th
+* LB: 75th
+* PB: 73th (bronze medal)
