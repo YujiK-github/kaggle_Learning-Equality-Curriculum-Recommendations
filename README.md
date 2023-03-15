@@ -81,4 +81,4 @@ kaggle notebook, colab pro+
 
 # Ranking
 * LB: 75th
-* PB: 73th (bronze medal)
+* PB: 73rd (bronze medal)
