@@ -38,7 +38,7 @@ Determine whether pairs of extracted candidates are correctly paired.
 * Search for thresholds & top_k.
   * I want to assign at least one content to each topic, so I assign k content of pairs of topics that were not assigned and have a large probability (which I also search for)
     
-| filename | model | batch_size | max_len | f2_score<br>(fold0) | thres<br>(fold0) | add topk<br>(fold0) | best_epoch |
+| filename | model | batch_size | max_len | f2_score<br>(fold0) | add topk<br>(fold0) | thres<br>(fold0) | best_epoch |
 | - | - | - | - | - | - | - | - |
 | exp004 | all-MiniLM-L6-v2 | 96 | 256 | 0.5004 | 12 | 0.051 | 4 |
 | exp006 | all-mpnet-base-v2 | 32 | 256 | 0.5591 | 14 | 0.001 | 4 | 
